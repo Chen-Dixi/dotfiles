@@ -1,0 +1,4 @@
+alias g++11='g++ --std=c++11'
+alias pc='proxychains4'
+alias minik='minikube'
+alias kc='kubectl'

@@ -1,0 +1,18 @@
+function gcn {
+  git_url=${1}
+  remain_str=${git_url##*https://github.com/}
+  head_str="https://github.com.cnpmjs.org/"
+  `git clone --depth=1 ${head_str}${remain_str}`
+}
+function ip {
+  if [ "$#" -ne 1 ]; then
+    echo "${0} <hostname>"
+    return
+  fi
+  
+  cat /etc/hosts | grep ${1}
+}
+alias proxy='export ALL_PROXY=socks5://127.0.0.1:1080'
+alias unproxy='unset ALL_PROXY'
+alias edit-hosts='sudo code /etc/hosts'
+alias date8="date '+%Y%m%d'"
