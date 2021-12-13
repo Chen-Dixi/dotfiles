@@ -10,7 +10,7 @@ RUN apt-get update && apt install -y cmake libncurses5-dev libncursesw5-dev htop
 
 WORKDIR /root
 
-COPY ./jupyter ~/.jupyter
+COPY ./jupyter .jupyter
 RUN apt install -y zsh && \
     chsh -s /bin/zsh && \
     git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
