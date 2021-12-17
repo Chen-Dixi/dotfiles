@@ -17,4 +17,6 @@ RUN apt install -y zsh && \
     git clone --depth=1 https://github.com/Chen-Dixi/dotfiles.git && cd dotfiles/zsh && \
     bash ./zsh.sh && conda init zsh && conda install -y jupyter notebook
 
+CMD ["zsh"]
+
 WORKDIR /root
