@@ -1,7 +1,7 @@
 cp ./zshrc ~/.zshrc
 
 cp ./oh-my-zsh/themes/astro.zsh-theme ~/.oh-my-zsh/themes/astro.zsh-theme
-git clone https://gitee.com/jklash1996/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 g++ --std=c++11 zsh_tools/RadixConverter.cpp -o zsh_tools/RadixConverter_exe
 g++ --std=c++11 zsh_tools/understand_timestamp.cpp -o zsh_tools/humantime
